@@ -1,0 +1,20 @@
+{
+  "name": "lan-tool-magazine",
+  "version": "1.0.0",
+  "description": "个人用工具库",
+  "author": "neohan",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["wxmp", "rsa", "jsencrypt", "js", "long"],
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neohan666/wxmp-rsa.git"
+  }
+}
+
