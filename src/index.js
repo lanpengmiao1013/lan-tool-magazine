@@ -1,4 +1,6 @@
 import useTimeCycle from "./useTimeCycle";
-export default {
-    useTimeCycle
+import useNanoid from './useNanoid'
+export {
+    useTimeCycle,
+    useNanoid
 }

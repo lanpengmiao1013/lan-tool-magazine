@@ -1,20 +1,25 @@
 {
   "name": "lan-tool-magazine",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "个人用工具库",
   "author": "neohan",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["wxmp", "rsa", "jsencrypt", "js", "long"],
-  "license": "MIT",
-  "files": [
-    "dist"
+  "keywords": [
+    "wxmp",
+    "rsa",
+    "jsencrypt",
+    "js",
+    "long"
   ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/lanpengmiao1013/lan-tool-magazine.git"
+  },
+  "dependencies": {
+    "nanoid": "^4.0.0"
   }
 }
-
