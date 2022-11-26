@@ -22,7 +22,18 @@ const timeGranularity = (type, date, timeFormatType, timeSeparator) => {
   const h = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
   const m = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
   const s = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
-  if (type) {
+  const timeMap = new Map()
+    .set('year', Y)
+    .set('month', M)
+    .set('date', D)
+    .set('hour', h)
+    .set('minutes', m)
+    .set('second', s);
+  if (type == 1) {
+    console.log("es6新增数据结构Map,取值方式为get()")
+    return timeMap
+  }
+  if (type == 2) {
     return `<div class="timeCycleBox">
       <span class="timeCycleYear">${Y}</span>
       <span class="timeSeparatorDate">${timeSeparator}</span>
@@ -36,13 +47,6 @@ const timeGranularity = (type, date, timeFormatType, timeSeparator) => {
       <span class="timeCycleSeconds">${s}</span>
     </div>`
   };
-  const timeMap = new Map()
-    .set('year', Y)
-    .set('month', M)
-    .set('date', D)
-    .set('hour', h)
-    .set('minutes', m)
-    .set('second', s);
   let specifiedTimeFormat = "";
   if (timeFormatType === 'ChineseCharacters') return `${Y}年${M}月${D}日 ${h}时${m}分${s}秒`;
   let timeKey = null;
